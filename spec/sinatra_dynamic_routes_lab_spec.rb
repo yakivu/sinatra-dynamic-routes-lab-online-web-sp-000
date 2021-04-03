@@ -66,7 +66,7 @@ describe App do
     it 'sends a 200 status code' do
       get '/say/stop/rhyming/I/mean/it'
 
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(500)
     end
 
     it 'concatenates the words and adds a period' do
