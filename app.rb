@@ -5,7 +5,7 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     @name = params[:name]
     erb :reversename
-    
+    (last_response.status).to eq(200)
   end
 
   get '/square/:number' do
