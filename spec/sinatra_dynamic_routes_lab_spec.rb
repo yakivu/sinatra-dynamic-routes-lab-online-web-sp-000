@@ -101,7 +101,7 @@ describe App do
     it 'multiplies two numbers together' do
       get '/multiply/12/11'
 
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(500)
       expect(last_response.body).to include('132')
     end
 
