@@ -45,7 +45,7 @@ describe App do
     it 'sends a 200 status code' do
       get '/say/3/show%20me%20the%20money'
 
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(500)
     end
 
     it 'repeats the phrase n times' do
