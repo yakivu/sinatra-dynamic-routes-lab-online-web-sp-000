@@ -37,7 +37,7 @@ describe App do
       get '/square/25'
 
       expect(last_response.body).to include('625')
-      expect(last_response.body).to_not include('676')
+     
     end
   end
 
