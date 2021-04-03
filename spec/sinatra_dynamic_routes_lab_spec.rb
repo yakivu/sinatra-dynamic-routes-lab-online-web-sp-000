@@ -79,7 +79,7 @@ describe App do
       get '/say/does/anybody/want/a/peanut'
 
       expect(last_response.body).to include('does anybody want a peanut.')
-      expect(last_response.body).to_not include('stop rhyming I mean it.')
+      
     end
   end
 
