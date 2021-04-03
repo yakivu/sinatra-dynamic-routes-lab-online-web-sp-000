@@ -12,7 +12,10 @@ class App < Sinatra::Base
     erb :square
   end
 
-  
+  get '/square/:number' do
+    @num = params[:number].to_s
+    erb :square
+  end
   
   
   get '/say/:number/:phrase' do
