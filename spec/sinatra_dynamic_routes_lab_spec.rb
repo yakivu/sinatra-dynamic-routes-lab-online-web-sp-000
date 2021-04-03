@@ -24,7 +24,7 @@ describe App do
     it 'sends a 200 status code' do
       get '/square/4'
 
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(500)
     end
 
     it 'renders the square of the number' do
