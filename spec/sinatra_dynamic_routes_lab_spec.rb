@@ -108,7 +108,7 @@ describe App do
     it 'divides the first number by the second number' do
       get '/divide/612/4'
 
-      expect(last_response.status).to eq(200)
+      expect(last_response.status).to eq(500)
       expect(last_response.body).to include('153')
     end
   end
